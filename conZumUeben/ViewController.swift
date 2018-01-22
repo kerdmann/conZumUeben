@@ -21,7 +21,6 @@ class ViewController: UIViewController {
     @IBOutlet private weak var anzeige: UILabel!
     @IBAction private func cardTouched(_ sender: UIButton) {
         print (Buttons.index(of: sender) ?? "nicht definiert")
-        Versuche += 1
         Spiel.karteUmdrehen(Kartennumer: Buttons.index(of: sender) ?? 0)
         kartenAnzeigen()
     }
